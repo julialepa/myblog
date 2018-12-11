@@ -5,5 +5,20 @@
 .feed-page{
   display: flex;
   justify-content: center;
-  margin-top: 30px
+  margin-top: 85px;
+  flex-direction: column
+  
 }
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,600,600i,700');
+    @import url('https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i');
+    @import url('https://fonts.googleapis.com/css?family=Playball');
+
+
+    body {
+       font-family: 'Titillium Web', sans-serif;
+       font-size: 13px;
+       background-image: -webkit-linear-gradient(left, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+       background-image: -o-linear-gradient(left, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+       background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    }   

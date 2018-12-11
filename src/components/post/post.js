@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import './post.css'
 
+
 class Post extends Component {
+    constructor(props){
+        super(props)
+    }
 
     render() {
         return (
-            <div>
+            <div className="post-container">
                 <div className="post">
-                <h5>{this.props.post.title}</h5>
-                <p>{this.props.post.body}</p>
+                <h5>{this.props.title}</h5>
+                <p>{this.props.body}</p>
                 </div>
             </div>
         );
@@ -16,5 +20,4 @@ class Post extends Component {
 }
 
 export default Post;
-
 

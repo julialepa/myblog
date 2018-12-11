@@ -1,8 +1,14 @@
 .post{
-    width: 100%;
+    width: 50%;
     text-align: left;
     background-color: #f3f3f3;
     padding: 15px;
-    border-left: 3px solid #d4d4d4;
+    border-left: 3px solid #58b7ae;
     color: #4e4d4d;
+    margin-bottom: 20px
+}
+
+.post-container{
+    display: flex;
+    justify-content: center;
 }
