@@ -10,7 +10,7 @@ class UserModal extends Component {
             modal: false,
             user: null
         };
-        this.dataUser()
+        //this.dataUser()
         this.toggle = this.toggle.bind(this);
     }
 
@@ -29,10 +29,12 @@ class UserModal extends Component {
             modal: !this.state.modal
         });
     }
+    componentDidMount() {
+        this.dataUser()
+    }
 
     render() {
         const {user} = this.state
-        console.log('>>>>>>>', user)
         if (user) {
             return (
                 <div>
