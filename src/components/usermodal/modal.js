@@ -8,7 +8,7 @@ class UserModal extends Component {
         super(props);
         this.state = {
             modal: false,
-            user: undefined
+            user: null
         };
         this.dataUser()
         this.toggle = this.toggle.bind(this);
@@ -31,8 +31,10 @@ class UserModal extends Component {
     }
 
     render() {
-        const user = this.state.user
-        if (user !== undefined) {
+        const {user} = this.state
+
+        console.log('>>>>>>>', user)
+        if (user) {
             return (
                 <div>
                     <div className="user one" onClick={this.toggle}>{this.props.buttonLabel}</div>
