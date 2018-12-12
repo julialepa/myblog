@@ -34,22 +34,6 @@ class App extends Component {
 
 
   render() {
-    
-
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem
-        className="custom-tag"
-        tag="div"
-        onExiting={this.onExiting}
-        onExited={this.onExited}
-      >
-        <CarouselCaption className="text-danger" captionText={post.title} captionHeader={post.body} />
-      </CarouselItem>
-      );
-    });
-
-
     return (
       <div>
         <Home />

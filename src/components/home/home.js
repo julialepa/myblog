@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './home.css'
 import Modal from '../usermodal/modal'
 import Searchbar from './searchbar'
-import Carousel from '../carousel/carousel'
 
 
 class Home extends Component {
