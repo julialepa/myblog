@@ -15,7 +15,7 @@ class UserModal extends Component {
     }
 
     dataUser() {
-        fetch('https://jsonplaceholder.typicode.com/users/' + this.props.id)
+        fetch(`https://jsonplaceholder.typicode.com/users/${this.props.id}`)
             .then(response => response.json())
             .then(json => this.setState({
                 user: json
@@ -32,7 +32,6 @@ class UserModal extends Component {
 
     render() {
         const {user} = this.state
-
         console.log('>>>>>>>', user)
         if (user) {
             return (
