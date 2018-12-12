@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./components/home/home";
 import Post from "./components/post/post";
 import Modal from "./components/usermodal/modal";
+import Liveclock from './components/clock.js'
 
 class App extends Component {
   constructor(props) {
@@ -35,10 +36,13 @@ class App extends Component {
     return (
       <div>
         <Home />
+        
         {loader ? (
           <p>'...loading'</p>
         ) : (
+          
           <div className="carousel-container">
+            <Liveclock />
             <div className="feed-page">
               {post.map(item => (
                 <Post title={item.title} body={item.body} />
