@@ -11,7 +11,7 @@ class Post extends Component {
         return (
             <div className="post-container">
                 <div className="post">
-                <h5>{this.props.title}</h5>
+                <h5 className="post-title">{this.props.title}</h5>
                 <p>{this.props.body}</p>
                 </div>
             </div>
