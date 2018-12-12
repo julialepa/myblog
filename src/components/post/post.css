@@ -17,3 +17,8 @@
     text-transform: uppercase;
     font-style: italic;
 }
+
+.list-divider {
+    height: 3px;
+    background-color: #fff;
+}

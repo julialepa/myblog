@@ -42,7 +42,10 @@ class App extends Component {
           <div className="carousel-container">
             <div className="feed-page">
               {post.map(item => (
-                <Post title={item.title} body={item.body} />
+                <div>
+                  <Post title={item.title} body={item.body} />
+                  <hr className="list-divider"/>
+                </div>
               ))}
             </div>
           </div>
