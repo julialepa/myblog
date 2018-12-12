@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Collapse, Nav, NavItem, NavbarToggler, Navbar } from 'reactstrap'
-
+import './footer.css'
 
 
 class Footer extends Component {
@@ -10,7 +10,7 @@ class Footer extends Component {
         <div>
         <Navbar light expand="md">
             <NavbarToggler/>
-                <Nav className="right-bar ml-auto" navbar>
+                <Nav className="right-bar ml-auto footer-container" navbar>
                     <NavItem>
                         <a className="my-a">company</a>
                     </NavItem>

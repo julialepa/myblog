@@ -13,7 +13,7 @@ class Home extends Component {
       return (
         <div className="sidebar">
             <Modal   id={5} />
-            <div className="logo-nav">FLAMINGO</div>
+            <div className="logo-nav">IlMioBlogIncazzato</div>
         </div>
       );
 
