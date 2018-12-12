@@ -4,12 +4,13 @@
     left: 0;
     right: 0;
     padding: 6px 0px 0px 17px;
-    background-color: #58b7ae2e;
+    background-color: #58b7ae;
     color: white;
     transition: 1s;
     width: auto;
     display: flex;
     justify-content: space-between;
+    height: 6rem;
 }
 
     .closed {
