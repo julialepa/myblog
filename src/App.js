@@ -3,11 +3,6 @@ import './App.css';
 import Home from './components/home/home'
 import Post from './components/post/post'
 import Modal from './components/usermodal/modal'
-import Carousel from './components/carousel/carousel'
-import {
-  CarouselItem,
-  CarouselCaption
-} from 'reactstrap';
 
 
 
@@ -38,7 +33,6 @@ class App extends Component {
       <div>
         <Home />
         <div className="carousel-container">
-          <Carousel />
         </div>
         <div className="feed-page">
           {this.state.post.map(post => <Post title={post.title} body={post.body} />)}

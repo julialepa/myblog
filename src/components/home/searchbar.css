@@ -2,7 +2,7 @@
     display: flex
 }
 
-.right-bar > a{
+.my-a{
     margin-right: 5px;
     letter-spacing: 2px;
     font-weight: 100;
@@ -10,7 +10,7 @@
     cursor: pointer;
 }
   
-.right-bar > i{
+.my-icon{
     margin-right: 10px !important;  
     margin-left: 10px;
     padding-top: 15px !important;
