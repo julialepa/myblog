@@ -3,9 +3,10 @@
     text-align: left;
     background-color: #f3f3f3;
     padding: 15px;
-    border-left: 3px solid #58b7ae;
+    border: 2px groove #000000;
     color: #4e4d4d;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    border-radius: 10%;
 }
 
 .post-container{
