@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./components/home/home";
 import Post from "./components/post/post";
 import Modal from "./components/usermodal/modal";
+import Footer from './components/footer'
 
 class App extends Component {
   constructor(props) {
@@ -46,6 +47,7 @@ class App extends Component {
             </div>
           </div>
         )}
+        <Footer/>
       </div>
     );
   }

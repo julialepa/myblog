@@ -14,7 +14,6 @@ class Home extends Component {
         <div className="sidebar">
             <Modal   id={5} />
             <div className="logo-nav">FLAMINGO</div>
-            <Searchbar />
         </div>
       );
 
