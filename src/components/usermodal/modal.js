@@ -8,14 +8,14 @@ class UserModal extends Component {
         super(props);
         this.state = {
             modal: false,
-            user: undefined
+            user: null
         };
-        this.dataUser()
+        //this.dataUser()
         this.toggle = this.toggle.bind(this);
     }
 
     dataUser() {
-        fetch('https://jsonplaceholder.typicode.com/users/' + this.props.id)
+        fetch(`https://jsonplaceholder.typicode.com/users/${this.props.id}`)
             .then(response => response.json())
             .then(json => this.setState({
                 user: json
@@ -29,10 +29,13 @@ class UserModal extends Component {
             modal: !this.state.modal
         });
     }
+    componentDidMount() {
+        this.dataUser()
+    }
 
     render() {
-        const user = this.state.user
-        if (user !== undefined) {
+        const {user} = this.state
+        if (user) {
             return (
                 <div>
                     <div className="user one" onClick={this.toggle}>{this.props.buttonLabel}</div>
